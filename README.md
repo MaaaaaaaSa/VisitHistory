@@ -32,7 +32,6 @@
 | Column    | Type       | Options         |
 | --------- | ---------- | --------------- |
 | address   | text       | null: false     |
-| apartment | references | |
 
 ### Association
 
