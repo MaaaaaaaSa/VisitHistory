@@ -5,13 +5,23 @@
 
   <div class='customers'>
     <div class='customer-list'>
-      <div class='customer-list-top'>福岡県福岡市博多区博多駅前1丁目1-1</div>
-      <div class='customer-list-bottom'>前回の履歴が表示</div>
+      <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-1", "#", class: 'customer-list-top' %></div>
+      <div><%= link_to "前回の履歴が表示される", "#", class: 'customer-list-bottom' %></div>
     </div>
     <div class='customer-list'>
-      <div class='customer-list-top'>福岡県福岡市博多区博多駅前1丁目1-1</div>
-      <div class='customer-list-bottom'>前回の履歴が表示</div>
+      <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-2", "#", class: 'customer-list-top' %></div>
+      <div><%= link_to "前回の履歴が表示される", "#", class: 'customer-list-bottom' %></div>
+    </div>
+    <div class='customer-list'>
+      <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-3 博多駅前マンション", "#", class: 'customer-list-top' %></div>
+      <div><%= link_to "前回の履歴が表示される", "#", class: 'customer-list-bottom' %></div>
     </div>
   </div>
 
+  <div class='main-under'>
+    <ul class='main-under-btn'>
+      <li><%= link_to "新規リスト作成", "#", class: 'list-create-btn'%></li>
+      <li><%= link_to "今日の成績", "#", class: 'list-create-btn'%></li>
+    </ul>
+  </div>
 </div>
