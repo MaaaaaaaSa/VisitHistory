@@ -1,6 +1,6 @@
 <%= render 'shared/second-header'%>
 
-<%= form_with url: user_registration_path, class: 'registration-main', local: true do |f| %>
+<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 
 <div class='form-wrap'>
   <div class='form-header'>
@@ -9,6 +9,7 @@
     </div>
   </div>
 
+<%= render 'shared/error_messages', model: f.object %>
 
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -52,7 +53,7 @@
         所属
         <span class="indispensable">必須</span>
       </div>
-
+      <%= f.collection_select(:area_id, Area.all , :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
     </div>
 </div>
 <div class='register-btn'>

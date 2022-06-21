@@ -1,12 +1,14 @@
 <header>
   <div class='header-area'>
     <div class='header-left'>
-      <%= link_to "VisitHistory", "#", class: 'header-title'%>
+      <%= link_to "VisitHistory", root_path, class: 'header-title'%>
     </div>
     <div class='header-light'>
       <ul class='header-light-list'>
-        <li><%= link_to "name", "#", class: 'user-btn'%></li>
-        <li><%= link_to "ログアウト", "#", class: 'user-btn'%></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "ログインユーザー：#{current_user.name}", "#", class: 'user-btn'%></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'user-btn'%></li>
+      <% end %>
       </ul>
     </div>
   </div>
