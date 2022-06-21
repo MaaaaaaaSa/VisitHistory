@@ -1,6 +1,6 @@
 <%= render 'shared/second-header'%>
 
-<%= form_with url: user_session_path, class: 'registration-main', local: true do |f| %>
+<%= form_with model: @user,url: user_session_path, class: 'registration-main', local: true do |f| %>
 
 <div class='form-wrap-login'>
   <div class='form-header'>
@@ -9,6 +9,7 @@
     </div>
   </div>
 
+<%= render 'shared/error_messages', model: f.object %>
 
   <div class="form-group">
     <div class='form-text-wrap'>
