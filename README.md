@@ -3,7 +3,6 @@
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
 | name      | string     | null: false                    |
-| phone     | string     | null: false, unique: true      |
 | email     | string     | null: false, unique: true      |
 | password  | string     | null: false                    |
 | name_kane | string     | null: false                    |

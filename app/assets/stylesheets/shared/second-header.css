@@ -1,0 +1,14 @@
+.second-header {
+  height: 10vh;
+  text-align: center;
+  padding: 2vh 0 3vh 0;
+  background-color: azure;
+}
+
+.second-header-logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 40px;
+  color: black;
+  letter-spacing: 2px;
+}

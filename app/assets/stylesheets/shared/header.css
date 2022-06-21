@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-.header-left{
-}
-
 .header-title {
   text-decoration: none;
   font-weight: 800;
@@ -18,8 +15,6 @@
   color: black;
 }
 
-.header-light {
-}
 
 .header-light-list {
   display: flex;
