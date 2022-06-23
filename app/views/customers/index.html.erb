@@ -4,9 +4,12 @@
   <div class='page-title'>お客様リスト</div>
 
   <div class='customers'>
+  <% @customer.each do |custom| %>
     <div class='customer-list'>
+    <%= link_to customer_path(customer.id) do %>
       <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-1", "#", class: 'customer-list-top' %></div>
       <div><%= link_to "前回の履歴が表示される", "#", class: 'customer-list-bottom' %></div>
+    <% end %>
     </div>
     <div class='customer-list'>
       <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-2", "#", class: 'customer-list-top' %></div>
@@ -16,6 +19,7 @@
       <div><%= link_to "福岡県福岡市博多区博多駅前1丁目1-3 博多駅前マンション", "#", class: 'customer-list-top' %></div>
       <div><%= link_to "前回の履歴が表示される", "#", class: 'customer-list-bottom' %></div>
     </div>
+  <% end %>
   </div>
 
   <div class='main-under'>
